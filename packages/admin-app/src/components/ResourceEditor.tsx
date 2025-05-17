@@ -224,7 +224,12 @@ export default function ResourceEditorComponent({
       ]}
       rightSide={
         <DropDownMenu links={actions}>
-          <Button buttonType="secondary" buttonSize="small" onClick={() => {}}>
+          <Button
+            buttonType="secondary"
+            buttonSize="small"
+            onClick={() => { }}
+            data-testid="Actions"
+          >
             <span className="flex items-center">
               <span>Actions</span> <ChevronDownIcon className="ml-1 w-3 h-3" />
             </span>

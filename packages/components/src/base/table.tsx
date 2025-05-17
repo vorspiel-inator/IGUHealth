@@ -48,10 +48,14 @@ function RenderCell({
   const render = useMemo(() => {
     return column.renderer ? column.renderer(value) : value.join(" ");
   }, [column, value]);
+
+  const testId = column.id + '=' + value.join(' ');
+
   return (
     <td
       key={column.id}
       className="overflow-auto whitespace-nowrap px-4 py-2 font-medium"
+      data-testid={testId}
     >
       {render}
     </td>

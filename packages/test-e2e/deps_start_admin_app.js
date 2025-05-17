@@ -7,7 +7,7 @@ async function main() {
         { 
             command: (
                 'yarn workspaces foreach -ptR --topological-dev --from @iguhealth/admin-app run build && ' +
-                'http-server ../admin-app -p 3001'
+                'http-server ../admin-app/build -p 3001'
             ),
             name: 'SUT',
             cwd: path.resolve(__dirname, '../admin-app'),

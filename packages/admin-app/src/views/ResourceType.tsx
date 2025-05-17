@@ -159,6 +159,7 @@ function ResourceTypeHeader({ refresh }: Readonly<{ refresh: () => void }>) {
                   }),
                 )
               }
+              data-testid="New"
             >
               <div className="flex items-center justify-center ">
                 <PlusIcon className="w-4 h-4 mr-1" /> <span>New</span>
